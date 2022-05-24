@@ -1,0 +1,37 @@
+/* =================================================================
+                                * Fonts * 
+================================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/* =================================================================
+                                * Variables * 
+================================================================= */
+
+:root {
+    /* ! Color */
+    --primary__Red: hsl(0, 78%, 62%);
+    --primary__Cyan: hsl(180, 62%, 55%);
+    --primary__Orange: hsl(34, 97%, 64%);
+    --primary__Blue: hsl(212, 86%, 64%);
+    --neutral__DarkBlue: hsl(234, 12%, 34%);
+    --neutral__GrayishBlue: hsl(229, 6%, 66%);
+    --neutral__LightGray: hsl(0, 0%, 98%);
+    --footer_Color: hsl(228, 45%, 44%);
+    /* ! Font Awesome */
+    --Poppins: 'Poppins', sans-serif;
+}
+
+
+/* =================================================================
+                                * Footer * 
+================================================================= */
+
+.footer__attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.footer__link {
+    color: var(--footer_Color);
+}
