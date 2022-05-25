@@ -78,6 +78,61 @@ body {
                                 * Section Card * 
 ================================================================= */
 
+.section {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.section__card {
+    border: 1px solid #000;
+    border-radius: 8px;
+    background-color: var(--neutral__LightGray);
+    box-shadow: 3px 10px 10px var(--neutral__GrayishBlue);
+    margin-bottom: 30px;
+    min-width: 310px;
+    max-width: 500px;
+    height: 222px;
+    overflow: hidden;
+}
+
+.section__line {
+    height: 4px;
+}
+
+.section__line--supervisor {
+    background-color: var(--primary__Cyan);
+}
+
+.section__line--team {
+    background-color: var(--primary__Red);
+}
+
+.section__line--karma {
+    background-color: var(--primary__Orange);
+}
+
+.section__line--calculator {
+    background-color: var(--primary__Blue);
+}
+
+.section__content {
+    padding: 30px;
+}
+
+.section__content--title {
+    margin-top: 0;
+}
+
+.section__content--paragraph {
+    color: var(--neutral__GrayishBlue);
+    font-size: 0.89em;
+    margin: -15px 0 30px 0;
+}
+
+.section__content--img {
+    text-align: right;
+}
+
 
 /* =================================================================
                                 * Footer * 
