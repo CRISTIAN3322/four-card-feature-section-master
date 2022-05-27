@@ -1,148 +1,248 @@
-/* =================================================================
+    /* =================================================================
                                 * Fonts * 
 ================================================================= */
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
-
-/* =================================================================
+    
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+    /* =================================================================
                                 * Variables * 
 ================================================================= */
-
-:root {
-    /* ! Color */
-    --primary__Red: hsl(0, 78%, 62%);
-    --primary__Cyan: hsl(180, 62%, 55%);
-    --primary__Orange: hsl(34, 97%, 64%);
-    --primary__Blue: hsl(212, 86%, 64%);
-    --neutral__DarkBlue: hsl(234, 12%, 34%);
-    --neutral__GrayishBlue: hsl(229, 6%, 66%);
-    --neutral__LightGray: hsl(0, 0%, 98%);
-    --footer_Color: hsl(228, 45%, 44%);
-    /* ! Font Awesome */
-    --Poppins: 'Poppins', sans-serif;
-}
-
-
-/* =================================================================
+    
+     :root {
+        /* ! Color */
+        --primary__Red: hsl(0, 78%, 62%);
+        --primary__Cyan: hsl(180, 62%, 55%);
+        --primary__Orange: hsl(34, 97%, 64%);
+        --primary__Blue: hsl(212, 86%, 64%);
+        --neutral__DarkBlue: hsl(234, 12%, 34%);
+        --neutral__GrayishBlue: hsl(229, 6%, 66%);
+        --neutral__LightGray: hsl(0, 0%, 98%);
+        --footer_Color: hsl(228, 45%, 44%);
+        /* ! Font Awesome */
+        --Poppins: 'Poppins', sans-serif;
+    }
+    /* =================================================================
                                 * Reset * 
 ================================================================= */
-
-body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: var(--Poppins);
-    font-size: 0.9375rem;
-    color: var(--neutral__DarkBlue);
-    background-color: var(--neutral__LightGray);
-}
-
-
-/* =================================================================
+    
+    body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: var(--Poppins);
+        font-size: 0.9375rem;
+        color: var(--neutral__DarkBlue);
+        background-color: var(--neutral__LightGray);
+    }
+    /* =================================================================
                                 * Container * 
 ================================================================= */
-
-.container {
-    margin: 90px 30px;
-}
-
-
-/* =================================================================
+    
+    .container {
+        margin: 90px 30px;
+    }
+    /* =================================================================
                                 * Header * 
 ================================================================= */
-
-.header {
-    text-align: center;
-}
-
-.header__title {
-    font-weight: 200;
-    font-size: 1.6em;
-    margin: 0;
-}
-
-.header__subtitle {
-    font-weight: 600;
-    font-size: 1.6em;
-    margin: 0;
-}
-
-.header__paragraph {
-    font-size: 1.05em;
-    color: var(--neutral__GrayishBlue);
-    margin-bottom: 70px;
-}
-
-
-/* =================================================================
+    
+    .header {
+        text-align: center;
+    }
+    
+    .header__title {
+        font-weight: 200;
+        font-size: 1.6em;
+        margin: 0;
+        animation: title 1s;
+    }
+    
+    .header__subtitle {
+        font-weight: 600;
+        font-size: 1.6em;
+        margin: 0;
+        animation: subtitle 2s;
+    }
+    
+    .header__paragraph {
+        font-size: 1.05em;
+        color: var(--neutral__GrayishBlue);
+        margin-bottom: 70px;
+        animation: paragraph 2.5s;
+    }
+    /* =================================================================
                                 * Section Card * 
 ================================================================= */
-
-.section {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.section__card {
-    border: 1px solid #000;
-    border-radius: 8px;
-    background-color: var(--neutral__LightGray);
-    box-shadow: 3px 10px 10px var(--neutral__GrayishBlue);
-    margin-bottom: 30px;
-    min-width: 310px;
-    max-width: 500px;
-    height: 222px;
-    overflow: hidden;
-}
-
-.section__line {
-    height: 4px;
-}
-
-.section__line--supervisor {
-    background-color: var(--primary__Cyan);
-}
-
-.section__line--team {
-    background-color: var(--primary__Red);
-}
-
-.section__line--karma {
-    background-color: var(--primary__Orange);
-}
-
-.section__line--calculator {
-    background-color: var(--primary__Blue);
-}
-
-.section__content {
-    padding: 30px;
-}
-
-.section__content--title {
-    margin-top: 0;
-}
-
-.section__content--paragraph {
-    color: var(--neutral__GrayishBlue);
-    font-size: 0.89em;
-    margin: -15px 0 30px 0;
-}
-
-.section__content--img {
-    text-align: right;
-}
-
-
-/* =================================================================
+    
+    .section {
+        max-width: 500px;
+        margin: 0 auto;
+        animation: carsContainer 3s;
+    }
+    
+    .section__card {
+        border: 1px solid #000;
+        border-radius: 8px;
+        background-color: var(--neutral__LightGray);
+        box-shadow: 3px 10px 10px var(--neutral__GrayishBlue);
+        margin-bottom: 30px;
+        min-width: 310px;
+        max-width: 500px;
+        height: 222px;
+        overflow: hidden;
+    }
+    
+    .section__line {
+        height: 4px;
+    }
+    
+    .section__line--supervisor {
+        background-color: var(--primary__Cyan);
+    }
+    
+    .section__line--team {
+        background-color: var(--primary__Red);
+    }
+    
+    .section__line--karma {
+        background-color: var(--primary__Orange);
+    }
+    
+    .section__line--calculator {
+        background-color: var(--primary__Blue);
+    }
+    
+    .section__content {
+        padding: 30px;
+    }
+    
+    .section__content--title {
+        margin-top: 0;
+    }
+    
+    .section__content--paragraph {
+        color: var(--neutral__GrayishBlue);
+        font-size: 0.89em;
+        margin: -15px 0 30px 0;
+    }
+    
+    .section__content--img {
+        text-align: right;
+    }
+    /* =================================================================
                                 * Footer * 
 ================================================================= */
-
-.footer__attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.footer__link {
-    color: var(--footer_Color);
-}
+    
+    .footer__attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+    
+    .footer__link {
+        color: var(--footer_Color);
+    }
+    /* =================================================================
+                                * Animations * 
+================================================================= */
+    
+    @keyframes title {
+        0% {
+            transform: translateY(-500px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+    
+    @keyframes subtitle {
+        0% {
+            transform: translateX(500px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    
+    @keyframes paragraph {
+        0% {
+            transform: translateX(-500px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    
+    @keyframes carsContainer {
+        0% {
+            transform: translateY(500px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+    /* =================================================================
+                                * Media Queries * 
+================================================================= */
+    
+    @media only screen and (min-width: 600px) {
+        .header {
+            max-width: 525px;
+            margin: 0 auto;
+        }
+        .header__title {
+            font-size: 2.5em;
+        }
+        .header__subtitle {
+            font-size: 2.5em;
+        }
+    }
+    
+    @media only screen and (min-width: 780px) {
+        .section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 30px;
+            max-width: 900px;
+        }
+        .section__twoCards {
+            grid-column: 2/3;
+            grid-row: 1/3;
+        }
+    }
+    
+    @media only screen and (min-width:1175px) {
+        .section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+        }
+        .section__card {
+            width: 355px;
+            height: 254px;
+        }
+    }
+    
+    @media only screen and (min-width: 780px) {
+        .section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 30px;
+            max-width: 900px;
+        }
+        .section__twoCards {
+            grid-column: 2/3;
+            grid-row: 1/3;
+        }
+    }
+    
+    @media only screen and (min-width:1175px) {
+        .section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+        }
+        .section__card {
+            width: 355px;
+            height: 254px;
+        }
+    }
